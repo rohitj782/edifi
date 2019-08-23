@@ -6,9 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-
-import com.hackiiitd2019.edifi.Admin.Admin;
 import com.hackiiitd2019.edifi.R;
+import com.hackiiitd2019.edifi.auth.AdminSignIn;
 
 public class StudentOrFaculty extends AppCompatActivity {
 
@@ -21,7 +20,7 @@ public class StudentOrFaculty extends AppCompatActivity {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(StudentOrFaculty.this, Admin.class));
+                startActivity(new Intent(StudentOrFaculty.this, AdminSignIn.class));
             }
         });
 
